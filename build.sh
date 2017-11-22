@@ -1,5 +1,5 @@
 #!/bin/sh
-# Script to build Panopoly 7.x-1.x
+# Script to build Drupal in a Day for Drupal 8.x.
 # Make sure the correct number of args was passed from the command line
 
 if [ $# -eq 0 ]; then
@@ -8,7 +8,7 @@ if [ $# -eq 0 ]; then
 fi
 
 shift $((OPTIND-1))
-MAKEFILE='build-panopoly.make'
+MAKEFILE='build-did.make'
 TARGET=$1
 # Make sure we have a target directory
 if [ -z "$TARGET" ]; then
@@ -19,18 +19,6 @@ CALLPATH=`dirname "$0"`
 ABS_CALLPATH=`cd "$CALLPATH"; pwd -P`
 BASE_PATH=`cd ..; pwd`
 
-echo ' ___   ___   ___'
-echo '|___| |   | |   |'
-echo ' ___  |   | |___|'
-echo '|   | |   |  ___ '
-echo '|   | |___| |___|'
-echo '|   |  _________ '
-echo '|___| |_________|'
-echo ''
-echo '================='
-echo '    Panopoly     '
-echo '================='
-
 echo "\nThis command can be used to build the distribution.\n"
 echo "  [1] Build distribution at $TARGET (in release mode)"
 echo "  [2] Build distribution at $TARGET (in development mode)\n"
@@ -39,12 +27,12 @@ read SELECTION
 
 if [ $SELECTION = "1" ]; then
 
-  echo "Building Panopoly distribution..."
+  echo "Building Drupal in a Day distribution..."
   DRUSH_OPTS='--no-cache'
 
 elif [ $SELECTION = "2" ]; then
 
-  echo "Building Panopoly distrbution..."
+  echo "Building Drupal in a Day distrbution..."
   DRUSH_OPTS='--working-copy --no-gitinfofile --no-cache'
 
 else
@@ -79,7 +67,7 @@ set +e
 # Build Symlinks
 echo 'Setting up symlinks...'
 DRUPAL=`cd "$TARGET"; pwd -P`
-ln -s /opt/files/panopoly "$DRUPAL/sites/default/files"
+ln -s /opt/files/did "$DRUPAL/sites/default/files"
 
 # Update existing distribution.
 if [ -f "$BASE_PATH/settings.php" ]; then
