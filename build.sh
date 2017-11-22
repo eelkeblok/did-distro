@@ -12,7 +12,7 @@ MAKEFILE='build-did.make'
 TARGET=$1
 # Make sure we have a target directory
 if [ -z "$TARGET" ]; then
-  echo "Usage $0 target_build_diri"
+  echo "Usage $0 target_build_dir"
   exit 2
 fi
 CALLPATH=`dirname "$0"`
