@@ -1,15 +1,18 @@
 #!/bin/sh
-# Script to build Drupal in a Day for Drupal 8.x.
-# Make sure the correct number of args was passed from the command line
+# Script to build the Drupal in a Day distribution for developers.
+#
+# IMPORTANT: Please take note that you do *not* need to run this script when you
+# want to install this distribution. Simply follow the installation instructions
+# from the Drupal in a Day documentation.
 
 if [ $# -eq 0 ]; then
-  echo "Usage $0 target_build_dir"
-  exit 1
+  TARGET="web"
+else
+  TARGET=$1
 fi
 
 shift $((OPTIND-1))
 MAKEFILE='build-did.make'
-TARGET=$1
 # Make sure we have a target directory
 if [ -z "$TARGET" ]; then
   echo "Usage $0 target_build_dir"
@@ -19,32 +22,8 @@ CALLPATH=`dirname "$0"`
 ABS_CALLPATH=`cd "$CALLPATH"; pwd -P`
 BASE_PATH=`cd ..; pwd`
 
-echo "\nThis command can be used to build the distribution.\n"
-echo "  [1] Build distribution at $TARGET (in release mode)"
-echo "  [2] Build distribution at $TARGET (in development mode)\n"
-echo "Selection: \c"
-read SELECTION
-
-if [ $SELECTION = "1" ]; then
-
-  echo "Building Drupal in a Day distribution..."
-  DRUSH_OPTS='--no-cache'
-
-elif [ $SELECTION = "2" ]; then
-
-  echo "Building Drupal in a Day distrbution..."
-  DRUSH_OPTS='--working-copy --no-gitinfofile --no-cache'
-
-else
- echo "Invalid selection."
- exit 0
-fi
-
-# Temp move settings
-if [ -f "$TARGET/sites/default/settings.php" ]; then
-  echo "\nBacking up settings.php..."
-  mv "$TARGET/sites/default/settings.php" settings.php
-fi
+echo "Building Drupal in a Day distribution..."
+DRUSH_OPTS='--working-copy --no-gitinfofile --no-cache'
 
 # Verify the make file
 set -e
@@ -65,25 +44,25 @@ drush make $DRUSH_OPTS "$ABS_CALLPATH/$MAKEFILE" "$TARGET"
 set +e
 
 # Build Symlinks
-echo 'Setting up symlinks...'
+echo 'Setting up default site data symlink...'
 DRUPAL=`cd "$TARGET"; pwd -P`
-ln -s /opt/files/did "$DRUPAL/sites/default/files"
+cp "$DRUPAL/sites/default/default.services.yml" data
+cp "$DRUPAL/sites/default/default.settings.php" data
+rm -Rf  "$DRUPAL/sites/default"
+ln -s ../../../data "$DRUPAL/sites/default"
+echo 'Done.'
 
 # Update existing distribution.
-if [ -f "$BASE_PATH/settings.php" ]; then
-
-  # Restore settings
-  echo 'Restoring settings...'
-  ln -s "$BASE_PATH/settings.php" "$DRUPAL/sites/default/settings.php"
+if [ -f "data/settings.php" ]; then
 
   # Clear caches and Run updates
   cd "$DRUPAL"
   echo 'Clearing caches...'
-  drush cc all;
+  drush cr;
   echo 'Running updates...'
   drush updb -y;
-  echo 'Reverting all features...'
-  drush fra -y;
-  drush cc all;
-  echo 'Build complete.'
+else
+  echo 'You should now run the installer for the site.'
 fi
+
+echo 'Build complete.'
