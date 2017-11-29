@@ -49,7 +49,14 @@ DRUPAL=`cd "$TARGET"; pwd -P`
 cp "$DRUPAL/sites/default/default.services.yml" data
 cp "$DRUPAL/sites/default/default.settings.php" data
 rm -Rf  "$DRUPAL/sites/default"
-ln -s ../../../data "$DRUPAL/sites/default"
+ln -s ../../data "$DRUPAL/sites/default"
+echo 'Done.'
+
+echo 'Symlinking profile files...'
+mkdir "$DRUPAL/profiles/drupalinaday"
+cd "$DRUPAL/profiles/drupalinaday"
+ln -s ../../../drupalinaday.* .
+cd "$ABS_CALLPATH"
 echo 'Done.'
 
 # Update existing distribution.
