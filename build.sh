@@ -3,7 +3,9 @@
 #
 # IMPORTANT: Please take note that you do *not* need to run this script when you
 # want to install this distribution. Simply follow the installation instructions
-# from the Drupal in a Day documentation.
+# from the Drupal in a Day documentation. Only when you want to contribute to
+# the project and make changes to the distribution do you need to use this
+# script to install it. See README.md for further information.
 
 if [ $# -eq 0 ]; then
   TARGET="web"
