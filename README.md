@@ -1,5 +1,8 @@
 # Drupal in a Day Distribution
 
+Note: this is still a work in progress. Links may not work and puzzle pieces for
+*Drupal in a Day* or not yet all in place.
+
 ## Installing this distribution
 ### If you are attending a Drupal in a Day event
 Please follow the instructions from the [installation manual][1].
@@ -43,6 +46,12 @@ TODO.
 
 ## Updating
 TODO.
+
+## Attribution
+Many thanks to [More than just themes](http://www.morethanthemes.com) for 
+creating the 
+[Restaurant Lite theme](https://www.drupal.org/project/restaurant_lite) and the 
+example content which we based this distribution on. 
 
 [1]: https://www.drupalinaday.org/documentation/installation
 [2]: https://www.drupal.org/project/drupalorg_drush
