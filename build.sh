@@ -51,7 +51,7 @@ DRUPAL=`cd "$TARGET"; pwd -P`
 cp "$DRUPAL/sites/default/default.services.yml" data
 cp "$DRUPAL/sites/default/default.settings.php" data
 rm -Rf  "$DRUPAL/sites/default"
-ln -s ../../data "$DRUPAL/sites/default"
+ln -s ../../data/site "$DRUPAL/sites/default"
 echo 'Done.'
 
 echo 'Symlinking profile files...'
