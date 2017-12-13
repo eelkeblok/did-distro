@@ -30,16 +30,19 @@ your local system. If not, please make sure that you do first.
 ## Hacking the project
 There are several areas you might want to make changes to the project.
 
-### Installed configuration
+### Updating configuration
 The configuration that will be installed along with the install profile lives 
-in the config directory of the project. If you want to make changes, you first 
-need to set up the sync directory for your install. You do this by making sure 
-the config sync directory in your sites/default/settings.php is set to 
-data/config, e.g.
+in the config/install directory of the project. If you want to make changes, you 
+first need to set up the sync directory for your install. You do this by making 
+sure the config sync directory in your sites/default/settings.php is set to 
+data/config/sync, e.g.
 
     $config_directories['sync'] = '../data/config/sync';
-    
-TODO: Finish.
+
+Now, you may use the script export-config.sh in the scripts directory to 
+copy your current site configuration into the config install directory. The 
+script will do the appropriate operations to make the configuration installable
+by the install process as opposed to site-specific configuration. 
 
 ## Default content
 TODO.
