@@ -9,9 +9,9 @@ distribution:
 # Required modules
 # Note that any dependencies of the modules listed here will be installed automatically.
 dependencies:
-  - node
-  - history
+  - automated_cron
   - block
+  - block_content
   - breakpoint
   - ckeditor
   - color
@@ -19,30 +19,30 @@ dependencies:
   - comment
   - contextual
   - contact
-  - menu_link_content
   - datetime
-  - block_content
-  - quickedit
+  - dblog
+  - dynamic_page_cache
   - editor
+  - field_ui
+  - file
   - help
+  - history
   - image
+  - menu_link_content
   - menu_ui
+  - node
   - options
   - path
   - page_cache
-  - dynamic_page_cache
-  - taxonomy
-  - dblog
+  - quickedit
+  - rdf
   - search
   - shortcut
+  - taxonomy
   - toolbar
-  - field_ui
-  - file
-  - rdf
+  - tour
   - views
   - views_ui
-  - tour
-  - automated_cron
 
 # List any themes that should be installed as part of the installation
 # profile installation.
