@@ -3,7 +3,7 @@
 #     bash scripts/export-config.sh
 echo "Please make sure you add any new modules to drupalinaday.info.yml."
 cd web
-drush cex
+drush cex -y
 cd ..
 rm config/install/*
 cp data/config/sync/* config/install/
