@@ -1,8 +1,8 @@
 country:
-  default: GR
-first_day: 0
+  default: NL
+first_day: 1
 timezone:
-  default: Europe/Athens
+  default: Europe/Amsterdam
   user:
     configurable: true
     warn: false
