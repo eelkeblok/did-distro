@@ -9,6 +9,7 @@ distribution:
 # Required modules
 # Note that any dependencies of the modules listed here will be installed automatically.
 dependencies:
+# Core modules
   - automated_cron
   - block
   - block_content
@@ -43,6 +44,9 @@ dependencies:
   - tour
   - views
   - views_ui
+# Contrib modules
+  - better_normalizers
+  - default_content
 
 # List any themes that should be installed as part of the installation
 # profile installation.
