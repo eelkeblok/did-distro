@@ -58,6 +58,7 @@ echo 'Symlinking profile files...'
 mkdir "$DRUPAL/profiles/drupalinaday"
 cd "$DRUPAL/profiles/drupalinaday"
 ln -s ../../../drupalinaday.* .
+ln -s ../../../config .
 cd "$ABS_CALLPATH"
 echo 'Done.'
 
