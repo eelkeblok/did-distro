@@ -42,7 +42,7 @@ rm -rf "$TARGET"
 
 # Do the build
 echo 'Running drush make...'
-drush make $DRUSH_OPTS "$ABS_CALLPATH/$MAKEFILE" "$TARGET"
+drush make $DRUSH_OPTS "$ABS_CALLPATH/../$MAKEFILE" "$TARGET"
 set +e
 
 # Build Symlinks
