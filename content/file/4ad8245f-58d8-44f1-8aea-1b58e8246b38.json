@@ -1,0 +1,91 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/pictures\/2017-06\/avatar.jpg"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 7
+        }
+    ],
+    "uuid": [
+        {
+            "value": "4ad8245f-58d8-44f1-8aea-1b58e8246b38"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4838a1c0-5438-4069-9453-bc221247d736"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "avatar.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/pictures\/2017-06\/avatar.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 1447
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2017-06-28T13:26:13+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2017-06-28T13:26:45+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "data": [
+        {
+            "value": "\/9j\/4AAQSkZJRgABAQAAAQABAAD\/\/gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNzUK\/9sAQwAIBgYHBgUIBwcHCQkICgwUDQwLCwwZEhMPFB0aHx4dGhwcICQuJyAiLCMcHCg3KSwwMTQ0NB8nOT04MjwuMzQy\/9sAQwEJCQkMCwwYDQ0YMiEcITIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy\/8AAEQgAVQBVAwEiAAIRAQMRAf\/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC\/\/EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29\/j5+v\/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC\/\/EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29\/j5+v\/aAAwDAQACEQMRAD8A9nooooAKKKKACis\/VNc0zRYhJqN5Fbg9Ax5P0HWsKL4leFpZRH\/aGznG54yB+dAHW0VDbXVve26z2syTRN0dGyDU1ABRRRQAUUUUAFFFFABWJ4r1+Pw1oE+oMA0g+SJD\/E56f4\/hW3XmXxnMg0fTAM+Wbhi3128f1oA8l1HUrvVr6W8vZ3mnkOSzHp7D0FVaKKAOk8HeLbvwxqiMJHaxkYCeHPBH94D1FfRUUiTRJLGwZHUMpHcHpXyjX0t4PZ28HaQZM7vsqdfTHH6YoA26KKKACiiigAooooAK5\/xn4eHiXw7NZKQJ1IkhJ7OP8eR+NY3xB8bt4at0s7HadQnGQSMiNfX6+leOf8JNrn20Xh1W7M4O4MZTj8ulAFC7tLixu5LW6iaKeJtrowwQahr0BfG+ia9AkXivRzLOo2i8tcB\/xHH8\/wAKT\/i2cB80NqdxjkQ7SM\/nj+dAHOeFfDN34m1aO2hRhApBnlxwi\/X19K+kLeGO2t4oIVCxxIERR2AGBXhOq\/EGT7D\/AGb4ds10mx7+X\/rG9ye38\/esbR\/GOuaLdLNBfzSKD80Uzl1YfQ0AfSdFZPhvXrfxJosOoW427vlkQ9UYdRWvQAlFFFAC0UUUAfNvjXUW1Txhqc5YlFmaJPZVO0fyz+NYFTXbF72d2zuaRic\/WoaACiiigAooooA9R+DWpMl9qOmsx2SRrMg9CDg\/mCPyr1+vB\/hQzDxtGB0aCQH8q95oAKKKKACiiigDwbxx4F1HStWubyztnn0+aQyKY1yY8nO0genrXFtbzqxDQyAjsVNfVtRmCE8mJCf90UAfKvkS\/wDPJ\/8Avk0eRL\/zyf8A75NfVXkQ\/wDPGP8A75FH2eH\/AJ4x\/wDfIoA+VfIl\/wCeT\/8AfJqSKyu53CQ2s0jHsiEmvqb7PD\/zxj\/75FKsUacrGoPsMUAecfDLwXd6NJLq2px+VPImyGI9VU8kn36cfWvSqKKACiiigAooooAKSiigAooooAKKKKACiiigAooooA\/\/2Q=="
+        }
+    ]
+}
