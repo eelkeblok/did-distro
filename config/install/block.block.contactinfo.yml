@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ad460bc5-4db7-4cc5-bf24-ab4578010400'
+  module:
+    - block_content
+    - system
+  theme:
+    - restaurant_lite
+id: contactinfo
+theme: restaurant_lite
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'block_content:ad460bc5-4db7-4cc5-bf24-ab4578010400'
+settings:
+  id: 'block_content:ad460bc5-4db7-4cc5-bf24-ab4578010400'
+  label: 'Contact Info'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false
+    context_mapping: {  }

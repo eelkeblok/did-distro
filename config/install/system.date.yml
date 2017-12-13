@@ -1,0 +1,9 @@
+country:
+  default: GR
+first_day: 0
+timezone:
+  default: Europe/Athens
+  user:
+    configurable: true
+    warn: false
+    default: 0

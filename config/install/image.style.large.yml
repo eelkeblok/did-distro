@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: large
+label: 'Large (850×495)'
+effects:
+  4b0f76ac-9d2a-4c8d-b3b9-23375fde4909:
+    uuid: 4b0f76ac-9d2a-4c8d-b3b9-23375fde4909
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 850
+      height: 495

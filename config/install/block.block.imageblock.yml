@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cf4ac4ee-41c7-405f-b772-c1766f10c16a'
+  module:
+    - block_content
+    - system
+  theme:
+    - restaurant_lite
+id: imageblock
+theme: restaurant_lite
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'block_content:cf4ac4ee-41c7-405f-b772-c1766f10c16a'
+settings:
+  id: 'block_content:cf4ac4ee-41c7-405f-b772-c1766f10c16a'
+  label: 'Image Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/9\r\n<front>"
+    negate: true
+    context_mapping: {  }

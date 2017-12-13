@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:caf956ed-7cfb-4f3d-a9c7-bac89674e7dd'
+  module:
+    - block_content
+  theme:
+    - restaurant_lite
+id: contactinfofootertop
+theme: restaurant_lite
+region: footer_top_first
+weight: 0
+provider: null
+plugin: 'block_content:caf956ed-7cfb-4f3d-a9c7-bac89674e7dd'
+settings:
+  id: 'block_content:caf956ed-7cfb-4f3d-a9c7-bac89674e7dd'
+  label: 'Contact Info (footer top)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

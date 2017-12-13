@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:82da5949-9e7b-4401-84c8-132df5672e69'
+  module:
+    - block_content
+    - system
+  theme:
+    - restaurant_lite
+id: bestrestaurantintown
+theme: restaurant_lite
+region: content_top
+weight: 0
+provider: null
+plugin: 'block_content:82da5949-9e7b-4401-84c8-132df5672e69'
+settings:
+  id: 'block_content:82da5949-9e7b-4401-84c8-132df5672e69'
+  label: 'Best Restaurant in Town'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

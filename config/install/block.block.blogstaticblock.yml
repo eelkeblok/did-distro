@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0b94b7bd-13a5-4f34-8296-5c81494b2646'
+  module:
+    - block_content
+    - system
+  theme:
+    - restaurant_lite
+id: blogstaticblock
+theme: restaurant_lite
+region: highlighted_first
+weight: 0
+provider: null
+plugin: 'block_content:0b94b7bd-13a5-4f34-8296-5c81494b2646'
+settings:
+  id: 'block_content:0b94b7bd-13a5-4f34-8296-5c81494b2646'
+  label: 'Blog (Static Block)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c33b957d-a282-46eb-9c67-e5e5ebbcf41e'
+  module:
+    - block_content
+  theme:
+    - restaurant_lite
+id: socialmediafooterbottom
+theme: restaurant_lite
+region: sub_footer_top_second
+weight: 0
+provider: null
+plugin: 'block_content:c33b957d-a282-46eb-9c67-e5e5ebbcf41e'
+settings:
+  id: 'block_content:c33b957d-a282-46eb-9c67-e5e5ebbcf41e'
+  label: 'Social media (Footer bottom)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:55ae7725-bc09-4c17-a07d-1343757719d8'
+  module:
+    - block_content
+    - system
+  theme:
+    - restaurant_lite
+id: backgroundimagebannerfrontpage
+theme: restaurant_lite
+region: banner
+weight: 0
+provider: null
+plugin: 'block_content:55ae7725-bc09-4c17-a07d-1343757719d8'
+settings:
+  id: 'block_content:55ae7725-bc09-4c17-a07d-1343757719d8'
+  label: 'Background image Banner Front page'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
