@@ -48,8 +48,10 @@ set +e
 # Build Symlinks
 echo 'Setting up default site data symlink...'
 DRUPAL=`cd "$TARGET"; pwd -P`
-cp "$DRUPAL/sites/default/*" data/sites/default
-cp "$DRUPAL/sites/default/*" data/sites/test
+cp "$DRUPAL/sites/default/default.services.yml" data/sites/default
+cp "$DRUPAL/sites/default/default.settings.yml" data/sites/default
+cp "$DRUPAL/sites/default/default.services.yml" data/sites/install.test
+cp "$DRUPAL/sites/default/default.settings.yml" data/sites/install.test
 cp "$DRUPAL/sites/development.services.yml" data/sites
 cp "$DRUPAL/sites/example.settings.local.php" data/sites
 cp "$DRUPAL/sites/example.sites.php" data/sites
