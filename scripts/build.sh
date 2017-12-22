@@ -64,6 +64,7 @@ mkdir "$DRUPAL/profiles/drupalinaday"
 cd "$DRUPAL/profiles/drupalinaday"
 ln -s ../../../drupalinaday.* .
 ln -s ../../../config .
+ln -s ../../../content .
 cd "$ABS_CALLPATH"
 echo 'Done.'
 
