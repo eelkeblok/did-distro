@@ -1,0 +1,75 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/6?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
+        }
+    },
+    "id": [
+        {
+            "value": 6
+        }
+    ],
+    "uuid": [
+        {
+            "value": "caf956ed-7cfb-4f3d-a9c7-bac89674e7dd"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 6
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic"
+        }
+    ],
+    "info": [
+        {
+            "value": "Contact Info (footer top)",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2017-06-21T11:29:18+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2017-06-21T11:29:18+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<div class=\"contact-info-items-grid\">\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-4\">\r\n      <div class=\"contact-info-item clearfix\">\r\n        <div class=\"contact-info-item__icon\"><i class=\"fa fa-map-marker\"><\/i><\/div>\r\n        <div class=\"contact-info-item__text\">654 Charack Road Bloomington, <br> IN 47408<\/div>\r\n      <\/div>\r\n    <\/div>\r\n    <div class=\"col-sm-4\">\r\n      <div class=\"contact-info-item clearfix\">\r\n        <div class=\"contact-info-item__icon\"><i class=\"fa fa-phone\"><\/i><\/div>\r\n        <div class=\"contact-info-item__text\">Booking: (012) 345 - 6789 <br> Inquiries: 555 - 674 0097<\/div>\r\n      <\/div>\r\n    <\/div>\r\n    <div class=\"col-sm-4\">\r\n      <div class=\"contact-info-item clearfix\">\r\n        <div class=\"contact-info-item__icon\"><i class=\"fa fa-envelope-o\"><\/i><\/div>\r\n        <div class=\"contact-info-item__text\"><a href=\"mailto:info@contact-restaurant.com\">info@contact-restaurant.com<\/a> <br> <a href=\"mailto:sales@contact-restaurant.com\">sales@contact-restaurant.com<\/a><\/div>\r\n      <\/div>\r\n    <\/div>\r\n  <\/div>\r\n<\/div>",
+            "format": "full_html",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}
