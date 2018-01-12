@@ -5,20 +5,6 @@
  */
 
 /**
- * Implements hook_install_tasks().
- */
-function drupalinaday_install_tasks(&$install_state) {
-  $tasks['drupalinaday_import_content'] = [
-    'display_name' => t('Import content'),
-    'display' => TRUE,
-    'type' => 'normal',
-    'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
-  ];
-
-  return $tasks;
-}
-
-/**
  * Implements hook_install_tasks_alter().
  */
 function drupalinaday_install_tasks_alter(&$tasks, $install_state) {
@@ -38,13 +24,6 @@ function drupalinaday_install_tasks_alter(&$tasks, $install_state) {
   $tasks_before = array_slice($tasks, 0, $cut_here, TRUE);
   $tasks_after = array_slice($tasks, $cut_here, count($tasks) - 1, TRUE);
   $tasks = $tasks_before + $task + $tasks_after;
-}
-
-/**
- * Install task to import default content.
- */
-function drupalinaday_import_content($install_state) {
-  default_content_modules_installed(['drupalinaday']);
 }
 
 /**
