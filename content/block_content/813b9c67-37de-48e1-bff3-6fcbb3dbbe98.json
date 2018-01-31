@@ -41,7 +41,7 @@
     ],
     "changed": [
         {
-            "value": "2017-06-21T11:25:55+00:00",
+            "value": "2018-01-31T08:52:41+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -66,7 +66,7 @@
     ],
     "body": [
         {
-            "value": "<div class=\"visible-md visible-lg\">Copyright \u00a9 2017 Restaurant Lite. all rights reserved.<\/div>\r\n<div class=\"text-center visible-xs visible-sm\">Copyright \u00a9 2017 Restaurant Lite. All rights reserved.<\/div>\r\n",
+            "value": "<div class=\"visible-md visible-lg\">Powered by <a href=\"https:\/\/drupal.org\">Drupal<\/a> and <a href=\"https:\/\/drupal.org\/project\/restaurant_lite\">Restaurant Lite<\/a>.<\/div>\r\n\r\n<div class=\"text-center visible-xs visible-sm\">Powered by <a href=\"https:\/\/drupal.org\">Drupal<\/a> and <a href=\"https:\/\/drupal.org\/project\/restaurant_lite\">Restaurant Lite<\/a>.<\/div>",
             "format": "full_html",
             "summary": "",
             "lang": "en"
