@@ -41,7 +41,7 @@
     ],
     "changed": [
         {
-            "value": "2017-06-29T11:30:28+00:00",
+            "value": "2018-01-31T08:45:24+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -66,7 +66,7 @@
     ],
     "body": [
         {
-            "value": "<div class=\"background-image-block__section field--mt-background-image-block\">\r\n<div class=\"background-image\" style=\"background-image: url(http:\/\/mttprojects.s3.amazonaws.com\/demo.drupalizing.com\/restaurant-lite\/background-image-banner.jpg);\">&nbsp;<\/div>\r\n\r\n<div class=\"background-image-overlay region--light-typography region--black-background\" style=\"opacity: 0.6;\">&nbsp;<\/div>\r\n\r\n<div class=\"container-fluid region--light-typography region--black-background\">\r\n<div class=\"row bottom-spacing-medium top-spacing-medium\">\r\n<div class=\"col-md-8 col-md-offset-2 text-center\">\r\n<h3 class=\"block-title block-title--extra-large\">RESTAURANT LITE<\/h3>\r\n\r\n<div class=\"bottom-spacing-small top-spacing-small\">\r\n<p class=\"large\">A spot where the food is simple \u2014 yet great.<\/p>\r\n\r\n<p class=\"large\">From tasty tacos to great pasta, we have it all.<\/p>\r\n<\/div>\r\n\r\n<div class=\"bottom-spacing-medium\">\r\n<p class=\"text-center\"><a class=\"button\" href=\"#\">Book a table<\/a><\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n",
+            "value": "<div class=\"background-image-block__section field--mt-background-image-block\">\r\n<div class=\"background-image\" style=\"background-image: url(\/sites\/default\/files\/2018-01\/food-eating-potatoes-beer-8313.jpg); background-size: cover;\">&nbsp;<\/div>\r\n\r\n<div class=\"background-image-overlay region--light-typography region--black-background\" style=\"opacity: 0.2;\">&nbsp;<\/div>\r\n\r\n<div class=\"container-fluid region--light-typography region--black-background\">\r\n<div class=\"row bottom-spacing-medium top-spacing-medium\">\r\n<div class=\"col-md-8 col-md-offset-2 text-center\">\r\n<h3 class=\"block-title block-title--extra-large\">Carpe Diem<\/h3>\r\n\r\n<div class=\"bottom-spacing-small top-spacing-small\">\r\n<p class=\"large\">A spot where the food is simple \u2014 yet great.<\/p>\r\n\r\n<p class=\"large\">From tasty tacos to great pasta, we have it all.<\/p>\r\n<\/div>\r\n\r\n<div class=\"bottom-spacing-medium\">\r\n<p class=\"text-center\"><a class=\"button\" href=\"#\">Book a table<\/a><\/p>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n<\/div>\r\n",
             "format": "full_html",
             "summary": "",
             "lang": "en"
