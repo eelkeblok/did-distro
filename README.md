@@ -42,6 +42,14 @@ This will use the directory data/config/sync as an intermediary location. The
 script will perform the appropriate operations to make the configuration 
 installable by the install process as opposed to site-specific configuration. 
 
+## Testing the installation
+To be able to test the installation process easily without having to
+wipe your main installation, a subsite directory is provided. If you
+make sure the domain name diad-install.test points to the webroot where
+you put the distribution, you can use that site for that purpose. The
+script `clean-test.sh` will drop all tables the database configured for
+that site and replace the settings.php with a clean one.
+
 ## Default content
 TODO.
 
